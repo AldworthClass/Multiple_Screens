@@ -20,7 +20,7 @@ def intro_screen(screen, clock):
     title_font = pygame.font.SysFont('Calibri', 25, True, False)
     title_text = title_font.render("Intro Screen", True, BLACK)
     instruction_font = pygame.font.SysFont('Calibri', 10, True, False)
-    instruction_text = instruction_font.render("Press any key to quit", True, RED)
+    instruction_text = instruction_font.render("Press any key to play", True, RED)
 
     while not done:
         for event in pygame.event.get():
