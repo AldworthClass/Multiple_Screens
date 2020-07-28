@@ -26,7 +26,7 @@ def intro_screen(screen, clock):
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 terminate()
-            if event.type == pygame.KEYDOWN:
+            elif event.type == pygame.KEYDOWN:
                 done = True
 
         screen.fill(GREEN)
@@ -52,7 +52,7 @@ def exit_screen(screen, clock):
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 terminate()
-            if event.type == pygame.KEYDOWN:
+            elif event.type == pygame.KEYDOWN:
                 terminate()
 
         screen.fill(BLACK)
